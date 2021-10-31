@@ -32,9 +32,9 @@ The suitable areas for establishing a processing plant were then calculated as o
 
 ![Capture3](Capture3.JPG)
 
-|Factors|	Data Ranges | Ratings |
+|Factors|Data Ranges | Ratings |
 |:-------|:-------|:---------|
-|Type of land use (parcel) |	Exempt land use (schools, parks, etc.) <br/> Residential <br/> Commercial <br/> Industry <br/> Agriculture | 0 <br/> 0 <br/>3 <br/> 4 <br/>4|
+|Type of land use (parcel) |Exempt land use (schools, parks, etc.) <br/> Residential <br/> Commercial <br/> Industry <br/> Agriculture | 0 <br/> 0 <br/>3 <br/> 4 <br/>4|
 |Floodplain (Flood Zones & areas outside flood zones)|100 years flood zone <br/> Zone outside 100 years flood zone |0 <br/> 1|
 |Wetland data (Wetlands & areas outside wetlands) | Wetland Zone <br/> Areas outside wetland zone | 0 <br/>1|
 |Distance from a major road (Interstate, Other principal arterials, minor arterial and major collector) in meters|6000+  <br/> 4501 - 6000 <br/> 3001 - 4500 <br/> 1501 - 3000 <br/> 0 - 1500|0 <br/> 1 <br/> 2 <br/> 3 <br/> 4|
