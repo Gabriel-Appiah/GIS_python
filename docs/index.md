@@ -1,9 +1,9 @@
 ## Suitability Analysis, Using Arcpy Python Library
 The study area for this project is the four counties (Cherokee, Plymouth, Ida, and Woodbury County) within the Iowa portion of Siouxland Interstate Metropolitan Planning Council. From Figure 2 the study area is located in the northwestern portion of the State of Iowa. Some of the counties bordering the study area include Union County, SD; Dakota County, NE; Monona, IA; Crawford, IA, Sac County, IA, among others. According to the 2010 decennial census, the total population of the study area was 146,319 in 2010, with 8.5% living in Cherokee County, 4.8% living in Ida County, 17.1% living in Plymouth County, and the remaining 69.8% living in Woodbury County. The estimates from the 2018 American Community Survey show that the population of the study area decreased to 145,962 in 2018, representing a decline of 0.24%. The counties within the study area that experienced a major decline in population between 2010 and 2018 were Cherokee County and Ida County. This trend is partly due to the rural nature of these counties. While Woodbury County and Plymouth County on the other hand experienced population growth from 2010 to 2018 by 0.4% and 0.2% respectively (see Figure 1 below).
 
-![](Figure_1)
+![image](Figure_1.jpg)
 
-![](Figure_2)
+![image](Figure_2.jpg)
 
 ## Project Description
 The study area, especially Woodbury County, has recently experienced unprecedented industrial growth when compared to other counties within the Tri-State Region (Nebraska, S. Dakota, and Iowa). In light of this, I wanted to assess the most suitable areas within the study area for the establishment of a new industry.  The objective of this research is to identify the most suitable sites within the study area for the establishment of a processing plant. For the region to continue to attract industries, the Economic Development Department of each of the counties must identify potential areas they can develop into shovel ready sites. 
@@ -26,7 +26,7 @@ $$ Suitability = (Dist. from major road + Pop. Density + land use)$ *(flood plai
 
 The suitable areas for establishing a processing plant were then calculated as outlined in the code in the appendix.
 
-![](Figure_3)
+![image](Figure_3.jpg)
 
 Factors|	Data| Ranges| Ratings |
 ------- |  -----|-------|---------|
