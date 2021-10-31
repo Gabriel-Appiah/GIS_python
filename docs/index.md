@@ -34,26 +34,11 @@ The suitable areas for establishing a processing plant were then calculated as o
 
 Factors|	Data Ranges | Ratings |
 :-------|:-------|:---------|
-|Type of land use (parcel) |	Exempt land use (schools, parks, etc.) | 0|
-||Residential |0|
-||Commercial | 3|
-||Industry |4|
-||Agriculture |4|
-|Floodplain (Flood Zones & areas outside flood zones)|100 years flood zone |0|
-|| Zone outside 100 years flood zone| 1|
-|Wetland data (Wetlands & areas outside wetlands) | Wetland Zone | 0|
-||Areas outside wetland zone | 1|
-|Distance from a major road (Interstate, Other principal arterials, minor arterial and major collector)|6000+ m |0|
-||4501 -6000 m|1|
-||3001 - 4500 m | 2|
-||1501 - 3000 m |3|
-||0 - 1500 m |4|
-|Population density (pop/sqkm)| 0 - 100 |0|
-||101 - 500|1|
-||501 - 2500 |2|
-||2501 - 5000|3|
-||5000+ |4|
-
+|Type of land use (parcel) |	Exempt land use (schools, parks, etc.) <br/> Residential <br/> Commercial <br/> Industry <br/> Agriculture | 0 <br/> 0 <br/>3 <br/> 4 <br/>4|
+|Floodplain (Flood Zones & areas outside flood zones)|100 years flood zone <br/> Zone outside 100 years flood zone |0 <br/> 1|
+|Wetland data (Wetlands & areas outside wetlands) | Wetland Zone <br/> Areas outside wetland zone | 0 <br/>1|
+|Distance from a major road (Interstate, Other principal arterials, minor arterial and major collector) in meters|6000+  <br/> 4501 - 6000 <br/> 3001 - 4500 <br/> 1501 - 3000 <br/> 0 - 1500|0 <br/> 1 <br/> 2 <br/> 3 <br/> 4|
+|Population density (pop/sqkm)| 0 - 100 <br/> 101 - 500 <br/> 501 -2500 <br/> 2501 - 5000 <br/> 5000+ |0 <br/> 1 <br/> 2 <br/> 3 <br/>4|
 
 
 ### Markdown
