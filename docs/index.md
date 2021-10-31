@@ -33,7 +33,7 @@ The suitable areas for establishing a processing plant were then calculated as o
 ![Capture3](Capture3.JPG)
 
 Factors|	Data Ranges | Ratings |
-------- |  -----|-------|---------|
+------- | -------|---------|
 Type of land use (parcel) |	Exempt land use (schools, parks, etc.) | 0
 | |Residential |0|
 | |Commercial | 3|
