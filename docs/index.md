@@ -42,15 +42,15 @@ The suitable areas for establishing a processing plant were then calculated as o
 
 **Figure 4: Map of Reclassified Raster**
 
-[updatedfloodplainmxd](updatedfloodplainmxd.JPG)
+[updatedfloodplainmxd](updatedfloodplainmxd.jpg)
 
-[LandUse](LandUSe.JPG)
+[LandUse](LandUSe.jpg)
 
-[EuclideanDistance](EuclideanDistance.JPG)
+[EuclideanDistance](EuclideanDistance.jpg)
 
-[Pop_Density_new](Pop_Density_new.JPG)
+[Pop_Density_new](Pop_Density_new.jpg)
 
-[Wetland](Wetland.JPG)
+[Wetland](Wetland.jpg)
 
 
 ## Results 
