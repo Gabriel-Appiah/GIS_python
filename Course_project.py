@@ -2,7 +2,7 @@
 # Name:        module1
 # Purpose:
 #
-# Author:      Gabriel
+# Author:      Gabriel Appiah
 #
 # Created:     24/11/2020
 #-------------------------------------------------------------------------------
