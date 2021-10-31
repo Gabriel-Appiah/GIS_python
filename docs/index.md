@@ -42,9 +42,9 @@ The suitable areas for establishing a processing plant were then calculated as o
 
 **Figure 4: Map of Reclassified Raster**
 
-![updatedfloodplainmxd](updatedfloodplainmxd.jpg)
+![updatedfloodplainMxd](updatedfloodplainMxd.jpg)
 
-![LandUse](LandUSe.jpg)
+![LandUse](LandUse.jpg)
 
 ![EuclideanDistance](EuclideanDistance.jpg)
 
@@ -60,7 +60,7 @@ Also, comparing the major cities within the study area, the most (22.9 km2)  and
 
 **Figure 5: Suitability Map**
 
-[Suitabilitymap](Suitabilitymap.JPG)
+![Suitabilitymap](Suitabilitymap.jpg)
 
 ```markdown
 #-------------------------------------------------------------------------------
