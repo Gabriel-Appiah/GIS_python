@@ -14,19 +14,19 @@ The method deployed in executing this project is quantitative. The python progra
 GIS dataset     |   Description     |     Sources     |      Date    |    Data Type  |
 -------------   |   ------------    |    ---------    |     ------   |   ----------  |
 Parcel data     | Parcel data shows the quantity of land identified for taxation purposes. It contains land use necessary for the suitability analysis. | Woodbury County Assessor, Cherokee County Assessor, Ida County Assessor, Plymouth County Assessor | 2019 | Vector |  
- Floodplain data | This dataset incorporates all Flood Insurance Rate Map (FIRM) databases published by FEMA. This dataset contains information on flood hazards.|FEMA: National Flood Hazard Data set [](https://msc.fema.gov/portal/home) [](https://hazards.fema.gov/femaportal/wps/portal/NFHLWMSkmzdownload)| 2011 | Vector |
- Wetland data  | This dataset contains an inventory of wetlands in the country and provides detailed information on the abundance, characteristics, and distribution of wetlands in the nation. | US Fish and Wildlife Service: National Wetlands Inventory: [](https://www.fws.gov/wetlands/data/data-download.html) | 2018 | Vector |
- Major Road Dataset | This dataset contained major roads (Interstate, Other principal arterials, minor arterial, and Major collector) within Cherokee, Plymouth, Ida, and Woodbury County.| Iowa Dot [](https://data.iowadot.gov/) | 2019 | Vector |
+ Floodplain data | This dataset incorporates all Flood Insurance Rate Map (FIRM) databases published by FEMA. This dataset contains information on flood hazards.| [FEMA](https://msc.fema.gov/portal/home) [National Flood Hazard Data set](https://hazards.fema.gov/femaportal/wps/portal/NFHLWMSkmzdownload)| 2011 | Vector |
+ Wetland data  | This dataset contains an inventory of wetlands in the country and provides detailed information on the abundance, characteristics, and distribution of wetlands in the nation. | [US Fish and Wildlife Service: National Wetlands Inventory:](https://www.fws.gov/wetlands/data/data-download.html) | 2018 | Vector |
+ Major Road Dataset | This dataset contained major roads (Interstate, Other principal arterials, minor arterial, and Major collector) within Cherokee, Plymouth, Ida, and Woodbury County.|| [Iowa Dot](https://data.iowadot.gov/) | 2019 | Vector |
  Population density by block group | This dataset contains the population by block group. The population density was obtained by dividing the pop. by the area of the block group. | U.S. Census Bureau [](https://www.census.gov/acs/www/data/data-tables-and-tools/american-factfinder/) | 2015 | Vector |
 
 
 Figure 3 below shows that the model used in analyzing the data set is the ordinal combination and pass/fail model. The data set was first prepared by using arcpy functions such as merge. Using the select by attribute function major roads (interstate, minor arterial, other principal arterials, and major collectors) were selected. The selected roads were converted into Euclidean Distance using spatial analytic function – Euclidean Distance. This was necessary to be able to estimate the distance from each of the major roads in the study area. The resulted raster was reclassified as shown in Table 2 below, using the reclassify function. A for loop was then used to loop through the parcel, floodplain, population density, and wetland dataset, and converted from vector to raster. The resulted raster was then reclassified as shown in Table 2 below, using the reclassify function (see Figure 4 below for a map of reclassified rasters). Note that Plymouth County’s floodplain dataset is not available, so I assumed that the entire county was outside the 100-year flood zone. The reclassified rasters were then combined using the raster calculator function and the equation below: 
 
-\(Suitability = (Dist. from major road + Pop. Density + land use) *(flood plain) * (wetland)\)
+$$ Suitability = (Dist. from major road + Pop. Density + land use)$ *(flood plain) * (wetland) $$
 
 The suitable areas for establishing a processing plant were then calculated as outlined in the code in the appendix.
 
-![](Figure_3)
+![image](Figure_3)
 
 Factors|	Data| Ranges| Ratings |
 ------- |  -----|-------|---------|
@@ -38,6 +38,8 @@ Type of land use (parcel) |	Exempt land use (schools, parks, etc.) | 0
                           | Agriculture                              |4
 ------------------------  | ------------------------------------------|
 Floodplain (Flood zones & areas outside flood zones)|	100 years flood zone	0
+
+
 	Zone outside 100 years flood zone	1
 Wetland data (Wetlands & areas outside wetlands)	Wetland Zone	0
 	Areas outside wetland zone	1
