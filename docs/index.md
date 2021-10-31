@@ -24,7 +24,7 @@ Parcel data     | Parcel data shows the quantity of land identified for taxation
 
 Figure 3 below shows that the model used in analyzing the data set is the ordinal combination and pass/fail model. The data set was first prepared by using arcpy functions such as merge. Using the select by attribute function major roads (interstate, minor arterial, other principal arterials, and major collectors) were selected. The selected roads were converted into Euclidean Distance using spatial analytic function – Euclidean Distance. This was necessary to be able to estimate the distance from each of the major roads in the study area. The resulted raster was reclassified as shown in Table 2 below, using the reclassify function. A for loop was then used to loop through the parcel, floodplain, population density, and wetland dataset, and converted from vector to raster. The resulted raster was then reclassified as shown in Table 2 below, using the reclassify function (see Figure 4 below for a map of reclassified rasters). Note that Plymouth County’s floodplain dataset is not available, so I assumed that the entire county was outside the 100-year flood zone. The reclassified rasters were then combined using the raster calculator function and the equation below: 
 
-$$Suitability = \(Dist. from major road + Pop. Density + land use) \times flood plain \times  wetland$$
+$$\Suitability = (Dist.frommajorroad + Pop.Density + landuse\) $$\times $$\floodplain \times  $$\wetland$$
 
 The suitable areas for establishing a processing plant were then calculated as outlined in the code in the appendix.
 
